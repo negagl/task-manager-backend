@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.kanban {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.column {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    min-height: 200px;
+}
+
+.tasks {
+    margin-top: 10px;
+    min-height: 100px;
+}
+
+.task {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: grab;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form-container .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.form-container .cancel {
+    background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
